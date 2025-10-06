@@ -55,7 +55,7 @@ st.write(f"- Consumer Surplus After **${consumer_surplus_after:.2f}**")
 st.write(f"- Producer Surplus After **${producer_surplus_after:.2f}**")
 st.write(f"- Deadweight loss: **${deadweight_loss:.2f}**")
 st.write(f"- Estimated Import Sector Gross Revenue: **${sector_gross_profit:.2f}**")
-
+st.write(f"- Estimated Import Sector Gross Revenue: **${tariff_revenue:.2f}**")
 # Plot over range of tariffs
 tariff_range = list(range(0, 101, 5))
 quantities = []
