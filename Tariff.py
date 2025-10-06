@@ -39,7 +39,7 @@ consumer_surplus_after = 0.5*(368.2164-consumer_price)*quantity_demanded
 producer_surplus_after = 0.5*(consumer_price-53.3731)*quantity_demanded
 tariff_revenue = (final_cost-base_final_cost)*quantity_demanded
 deadweight_loss = ((consumer_surplus_before+producer_surplus_before) -
-                   (consumer_surplus_after+producer_surplus_after)) + tariff_revenue
+                   (consumer_surplus_after+producer_surplus_after)) - tariff_revenue
 sector_gross_profit=quantity_demanded*(consumer_price-final_cost)
 
 # Output
