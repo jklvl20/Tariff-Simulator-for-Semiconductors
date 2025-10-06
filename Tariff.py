@@ -37,9 +37,9 @@ consumer_surplus_before = 0.5*(368.2164-base_price)*base_quantity
 producer_surplus_before = 0.5*(base_price-53.3731)*base_quantity
 consumer_surplus_after = 0.5*(368.2164-consumer_price)*quantity_demanded
 producer_surplus_after = 0.5*(consumer_price-53.3731)*quantity_demanded
-deadweight_loss = ((consumer_surplus_before+producer_surplus_before) -
-                   (consumer_surplus_after+producer_surplus_after))
 tariff_revenue = (final_cost-base_final_cost)*quantity_demanded
+deadweight_loss = ((consumer_surplus_before+producer_surplus_before) -
+                   (consumer_surplus_after+producer_surplus_after)) + tariff_revenue
 sector_gross_profit=quantity_demanded*(consumer_price-final_cost)
 
 # Output
@@ -55,7 +55,7 @@ st.write(f"- Consumer Surplus After **${consumer_surplus_after:.2f}**")
 st.write(f"- Producer Surplus After **${producer_surplus_after:.2f}**")
 st.write(f"- Deadweight loss: **${deadweight_loss:.2f}**")
 st.write(f"- Estimated Import Sector Gross Revenue: **${sector_gross_profit:.2f}**")
-st.write(f"- Estimated Import Sector Gross Revenue: **${tariff_revenue:.2f}**")
+st.write(f"- Tariff revenue: **${tariff_revenue:.2f}**")
 # Plot over range of tariffs
 tariff_range = list(range(0, 101, 5))
 quantities = []
