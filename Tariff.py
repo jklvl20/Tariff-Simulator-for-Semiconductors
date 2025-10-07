@@ -53,7 +53,7 @@ st.write(f"- Consumer Surplus Before **${consumer_surplus_before:.2f}**")
 st.write(f"- Producer Surplus Before **${producer_surplus_before:.2f}**")
 st.write(f"- Consumer Surplus After **${consumer_surplus_after:.2f}**")
 st.write(f"- Producer Surplus After **${producer_surplus_after:.2f}**")
-st.write(f"- Deadweight loss: **${deadweight_loss:.2f}**")
+st.write(f"- Deadweight loss: **${max(deadweight_loss, 0):.2f}**")
 st.write(f"- Estimated Import Sector Gross Profit: **${sector_gross_profit:.2f}**")
 st.write(f"- Tariff revenue: **${tariff_revenue:.2f}**")
 # Plot over range of tariffs
